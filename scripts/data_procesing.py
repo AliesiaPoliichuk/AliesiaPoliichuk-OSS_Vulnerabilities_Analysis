@@ -18,6 +18,7 @@ def data_clean_up(input_data):
     # ---  Dataframe information ---
     logger.info("Outputting information about a dataframe:")
     data_info_with_logger(data)
+        
     # --- Splitting cpe_id ---
     logger.info("Splitting cpe_id into vendor and product...")
     cpe_parts = data['cpe_id'].str.split(":", expand=True)
