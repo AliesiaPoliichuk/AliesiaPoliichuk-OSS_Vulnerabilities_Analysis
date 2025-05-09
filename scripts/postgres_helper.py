@@ -7,7 +7,7 @@ DB_URL = os.getenv("DB_LINK")
 
 def export_to_db(data):
     # Connecting to an online database with restricted access
-    # so the port has been replaced with "**********"
+    # so the port has been replaced with "DB_LINK"
     if DB_URL is None:
         raise Exception("Please set correct DB_LINK sys env variable")
 
