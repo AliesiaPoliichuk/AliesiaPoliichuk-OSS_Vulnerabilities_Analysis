@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from data_procesing import data_clean_up
 from postgres_helper import export_to_db
 
